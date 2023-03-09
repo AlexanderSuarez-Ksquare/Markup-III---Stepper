@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Meal Preferences</title>
+  </head>
+  <body>
+    <section class="container">
+      <section class="stepBar">
+        <section class="step one">
+          <div class="num" id="one">1</div>
+          Cabin
+        </section>
+        <div><hr id="lineDone" /></div>
+        <section class="step two">
+          <div class="num" id="two">2</div>
+          Meals
+        </section>
+        <div><hr id="lineNotDone" /></div>
+        <section class="step three">
+          <div class="num" id="three">3</div>
+          Upgrades
+        </section>
+        <div><hr id="lineNotDone" /></div>
+        <section class="step four">
+          <div class="num" id="four">4</div>
+          Payment
+        </section>
+      </section>
+      <section class="selections">
+        <section class="description">
+          <h2>Meal Preferences</h2>
+          <section class="instruction">
+            Your flight comes with breakfast, lunch and dinner. Please make your
+            selections below. Changes to your order can be made up to 48 hours
+            before your flight.
+          </section>
+        </section>
+        <form action="/submit">
+          <section class="breakfast">
+            <section class="breakfastFood">
+              <label for="breakfast-food">Breakfast</label>
+              <select class="food" name="" id="breakfast-food">
+                <option value="egg">Sausage Egg Scramble Bowl</option>
+              </select>
+            </section>
+            <section class="breakfastDrink">
+              <label for="breakfast-drink">Drink</label>
+              <select class="drink" name="" id="breakfast-drink">
+                <option value="coffe">Coffe</option>
+              </select>
+            </section>
+          </section>
+          <section class="lunch">
+            <section class="lunchFood">
+              <label for="lunch-food">Lunch</label>
+              <select class="food" name="" id="lunch-food">
+                <option value="sandwich">Club Sandwich Meal</option>
+              </select>
+            </section>
+            <section class="lunchDrink">
+              <label for="lunch-drink">Drink</label>
+              <select class="drink" name="" id="lunch-drink">
+                <option value="juice">Cranberry Juice</option>
+              </select>
+            </section>
+          </section>
+          <section class="dinner">
+            <section class="dinnerFood">
+              <label for="dinner-food">Dinner</label>
+              <select class="food" name="" id="dinner-food">
+                <option value="beef">Wagyu Beed Sliders Meal</option>
+              </select>
+            </section>
+            <section class="dinnerDrink">
+              <label for="dinner-drink">Drink</label>
+              <select class="drink" name="" id="dinner-drink">
+                <option value="wine">Red Wine</option>
+              </select>
+            </section>
+          </section>
+          <section class="dessert">
+            <label for="dessert">I'd like dessert, too!</label>
+            <input type="checkbox" id="dessert" />
+          </section>
+          <section class="buttons">
+            <button id="back">Back</button>
+            <button id="continue">Continue</button>
+          </section>
+        </form>
+      </section>
+    </section>
+  </body>
+</html>
